@@ -9,6 +9,9 @@ public class Book {
         this.bname = bname;
     }
 
+    public String getBname() {
+        return bname;
+    }
 
     public Book() {
     }

@@ -6,8 +6,12 @@
     <bean id="user" class="sample.com.atguigu.spring5.User"></bean>
     <bean id="book" class="sample.com.atguigu.spring5.Book">
         <property name="bname" value="易筋经"></property>
+
         <!--name是属性名 value是属性值-->
     </bean>
-    <!--set方法注入属性-->
-
+    <!--set方法注入属性 通过有参函数配置-->
+    <bean id="orders" class="sample.com.atguigu.spring5.Orders">
+        <constructor-arg name="oname" value="abc"></constructor-arg>
+        <constructor-arg name="address" value="china"></constructor-arg>
+    </bean>
 </beans>
